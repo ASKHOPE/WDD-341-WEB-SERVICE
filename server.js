@@ -5,7 +5,12 @@ app.get('/',(req,res) => {
     res.send("Hello Arnold");
 });
 
+app.get("/new", (req, res) => {
+  res.send("Hello World");
+});
+
 const port = 3000;
+// const port = randomize.(1000-3000);
 
 app.listen(process.env.port || port);
-console.log("Web server is listening at port" + (process.env.port || port));
+console.log("Web server is listening at port " + (process.env.port || port));
