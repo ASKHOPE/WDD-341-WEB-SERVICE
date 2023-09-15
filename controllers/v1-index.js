@@ -6,7 +6,12 @@ const BkRoute = (req, res) => {
   res.send("Hello Bobby");
 };
 
+const IkRoute = (req, res) => {
+  res.send("Hello Instructor");
+};
+
 module.exports = {
     AskRoute,
-    BkRoute
+    BkRoute,
+    IkRoute
 };
